@@ -1,0 +1,55 @@
+#!/usr/bin/python
+
+from TODO import TODO  # remove when done
+
+from docopt import docopt
+from USAGE import USAGE, VERSION
+from ProjectGenerator import ProjectGenerator
+from ProjectTypesList import ProjectTypesList
+from ConfigManager import ConfigManager, ConfMgr
+
+
+class App:
+
+    def __init__(self):
+        self.args = docopt(USAGE, version=VERSION)
+
+    def run(self):
+        self.config__ = self.handleConfig()
+#        self.handleCLIArgs();
+
+#    def handleCLIArgs(self):
+#        if self.args['--list']:
+#            projectTypesList = ProjectTypesList(
+#                self.config__,
+#                self.config__.configFile_
+#            );
+#            projectTypesList.run();
+#        elif self.args['<PROJECT_TYPE>']:
+#            generator = ProjectGenerator(
+#                    self.args['<PROJECT_TYPE>'],
+#                    self.args['--config']
+#            );
+#            generator.run();
+#        elif self.args['--todo']:
+#            print(TODO);
+#        else:
+#            print(USAGE);
+
+    def handleConfig(self):
+        cfg = ConfMgr()
+        if self.args["--config"]: 
+            cfg.parse(self.args["--config"])
+        else:
+            cfg.parse()
+
+#        config = ConfigManager(app.fallback_config)
+#        config.getConfig(self.args["--config"])
+#        return config
+
+
+###############################################################################
+if __name__ == "__main__":
+    app = App()
+    app.run()
+###############################################################################

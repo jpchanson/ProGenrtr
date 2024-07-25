@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.10.0" doxygen_gitid="GIT-NOTFOUND">
+  <compound kind="class">
+    <name>src::ConfigManager::ConfigManager</name>
+    <filename>classsrc_1_1ConfigManager_1_1ConfigManager.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>__init__</name>
+      <anchorfile>classsrc_1_1ConfigManager_1_1ConfigManager.html</anchorfile>
+      <anchor>a7df7a19c97ef041c9ebad661ab3c5309</anchor>
+      <arglist>(self, str fallback)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>src::ProjectGenerator::ProjectGenerator</name>
+    <filename>classsrc_1_1ProjectGenerator_1_1ProjectGenerator.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>src::ProjectTypesList::ProjectTypesList</name>
+    <filename>classsrc_1_1ProjectTypesList_1_1ProjectTypesList.html</filename>
+  </compound>
+</tagfile>
